@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WB Sales Daily",
+  "type": "object",
+  "properties": {
+    "date": {"type": "string", "format": "date"},
+    "orders": {"type": "integer", "minimum": 0},
+    "revenue": {"type": "number", "minimum": 0}
+  },
+  "required": ["date", "orders", "revenue"],
+  "additionalProperties": false
+}
